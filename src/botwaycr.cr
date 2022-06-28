@@ -26,7 +26,7 @@ module Botwaycr
         raise "ERROR: Bot language is not crystal"
       else
         if get_bot_info("type") == "slack"
-          BotwayConfig["botway"]["bots"][get_bot_info("name")]["bot_app_token"].to_i
+          BotwayConfig["botway"]["bots"][get_bot_info("name")]["bot_app_token"].to_s
         else
           BotwayConfig["botway"]["bots"][get_bot_info("name")]["bot_app_id"].to_s
         end

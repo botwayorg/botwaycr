@@ -28,7 +28,7 @@ require "botwaycr"
 token = Botwaycr::BW.new.get_token
 client_id = Botwaycr::BW.new.get_app_id
 
-client = Discord::Client.new(token: "Bot " + token, client_id: client_id)
+client = Discord::Client.new(token: "Bot " + token, client_id: client_id.to_u64)
 
 client.on_message_create do |payload|
   if payload.content.starts_with? "ping"
