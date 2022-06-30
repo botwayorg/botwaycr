@@ -2,7 +2,7 @@ require "yaml"
 require "json"
 
 module Botwaycr
-  VERSION = "0.1.1"
+  VERSION = "0.1.2"
 
   BotwayConfig = JSON.parse(File.read(File.join(Path["~/.botway"].expand(home: true), "botway.json")))
 
